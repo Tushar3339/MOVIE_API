@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie List Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Movie List Application</h1>
+    <div id="search-container">
+      <input type="text" id="search" placeholder="Search movies..." />
+      <button id="search-button">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="movies">
+      <!-- Movie list will be displayed here -->
+    </section>
+    <section id="movie-details" style="display: none">
+      <div class="movie-details-container">
+        <div class="movie-poster-container">
+          <!-- Movie poster will be displayed here -->
+          <img src="" alt="" id="movie-poster" class="movie-poster" />
+        </div>
+        <div class="movie-info-container">
+          <!-- Movie details, user ratings, and comments will be displayed here -->
+          <h2 id="movie-title"></h2>
+          <p>Release Year: <span id="release-year"></span></p>
+          <p>Genre: <span id="genre"></span></p>
+          <p>Plot: <span id="plot"></span></p>
+          <div class="user-rating">
+            <p>Your Rating:</p>
+            <div class="stars">
+              <span class="star" data-rating="1">&#9733;</span>
+              <span class="star" data-rating="2">&#9733;</span>
+              <span class="star" data-rating="3">&#9733;</span>
+              <span class="star" data-rating="4">&#9733;</span>
+              <span class="star" data-rating="5">&#9733;</span>
+            </div>
+          </div>
+          <div class="comment-input">
+            <textarea id="comment-input" rows="4" placeholder="Leave a comment..."></textarea>
+            <button id="submit-comment">Submit</button>
+          </div>
+          <div id="comments">
+            <!-- Comments will be displayed here -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="pagination">
+      <!-- Pagination buttons will be displayed here -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
